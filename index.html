@@ -6,6 +6,9 @@
         <script src="jszip.js?bypass=1"></script>
         <script src="utils.js?bypass=1"></script>
         <script src="index.js?bypass=1"></script>
+        <script>
+            onbeforeunload = function() { return "Do you really want to leave this page and lose your unsaved changes?"; };
+        </script>
     </head>
     <body>
         <noscript>This project requires javascript to work!</noscript>
